@@ -1,0 +1,343 @@
+/*
+ Theme Name:   Blankslate Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Blankslate Child Theme
+ Author:       PAYET Lucas
+ Author URI:   http://example.com
+ Template:     blankslate
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  blankslate
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+*{
+    font-family: Syne;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+body{
+    background: #ffffff;
+    margin: 0;
+}
+
+.colorF, .colorF *{
+    color: #ffffff!important;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+#header{
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo a img{
+    height: 19px;
+}
+
+#logo{
+    margin-left: 37px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    display: flex;
+    justify-content: center;
+    margin-right: 60px;
+}
+
+.menu :first-child{
+    order: 2;
+} 
+.menu :last-child{
+    order: 3;
+}
+
+.menu a{
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+.menu a:hover{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.menu li:last-child{
+    width: 236px;
+    background: #DC9F96;
+    margin: 0;
+}
+
+.menu li:last-child a{
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.menu li:last-child:hover{
+    background-color: #C02E44;
+}
+
+.menu li:last-child:hover a{
+    font-size: 16px;
+}
+
+.menu span{
+    color: inherit;
+}
+
+.form_1{
+   font-size: 20px;
+   font-weight: 400;
+}
+
+.form_1 input, .form_1 textarea{
+    color: black!important;
+    border: none;
+    width: 100%;
+    min-height: 71px;
+    border-radius: 7px;
+    resize: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.submitBut{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.submitBut input{
+    width: 198px;
+    height: 55px;
+    background: #E0B9B4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.submitBut span{
+    margin-top: 1px;
+    background: transparent;
+    border: 1px solid #E0B9B4;
+}
+
+.submitBut span::before{
+    background: #E0B9B4;
+}
+
+.wpcf7-response-output{
+    display: none;
+}
+
+.buttonC{
+    width: 100px;
+    height: 56px;
+    background: #E0B9B4;
+    outline: none;
+    border: 0px;
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+input[type="number"]{
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button{ 
+    -webkit-appearance: none;
+}
+
+.command_img{
+    width: 192px;
+}
+
+.btn_container{
+    display: flex;
+	align-items: center;
+}
+
+.fruit-input{
+    border-radius: 5px 0 0 5px;
+	border: none;
+	width: 51px;
+	text-align: center;
+	padding: 19px 4px;
+}
+
+.input-btns{
+	display: flex;
+	flex-direction: column;
+}
+
+.input-btns button{
+    width: 31px;
+    height: 27px;
+	background-color: #dc9f96;
+	border: none;
+	color: white;
+	padding: auto;
+	cursor: pointer;
+}
+
+.input-btns .btn-plus {
+	border-radius: 0 5px 0 0;
+	border-bottom: 1px white solid;
+}
+
+.input-btns .btn-minus {
+	border-radius: 0 0 5px 0;
+}
+
+.btn-ok {
+	background-color: #e0b9b4;
+	border: none;
+	border-radius: 5px;
+    margin-left: 11px;
+	padding: 1.5em;
+	min-width: 100px;
+	color: white;
+	cursor: pointer;
+    font-family: Syne;
+    font-size: 15px;
+}
+
+.btn-ok:hover, .hover-red:hover{
+    background-color: #C02E44;
+}
+
+.lineF{
+    height: 1px;
+    width: auto;
+    border-bottom: 1px solid white;
+    margin: 40px 0 55px 0;
+}
+
+.side1{
+    padding-inline: 45px;
+}
+
+.diviseur{
+    border-right: 1px solid #ffffff;
+}
+
+.info{
+    display: flex;
+}
+
+.info h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.space span input{
+    margin-top: 13px;
+}
+
+#footer{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+#footer a{
+    
+    color: inherit;
+}
+
+@media screen and (max-width: 900px){
+    header{
+        flex-direction: column;
+    }
+
+    #logo{
+        margin: 5px 0 0 0;
+    }
+
+    #menu{
+        width: 100%;
+    }
+
+    .menu{
+        justify-content: space-around;
+    }
+
+    .menu a{
+        height: 50px;
+    }
+
+    .menu li{
+        margin: 0;
+    }
+
+    .menu li:last-child{
+        width: auto;
+        background-color: transparent;
+    }
+
+    .menu li:last-child:hover{
+        background-color: transparent;
+    }
+    
+    .menu li:last-child a{
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .menu li:last-child a:hover{
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .diviseur{
+        border-right: none;
+        border-bottom: 1px solid #ffffff;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
